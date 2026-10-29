@@ -1,0 +1,201 @@
+{
+  "schema_version": 2,
+  "project": "Why Not Grill Me?",
+  "owner": "Shivansh Srivastava",
+  "snapshot_date": "2026-10-29",
+  "status": "comprehensive_draft_owner_review_required",
+  "markdown_document_count": 29,
+  "documents": [
+    {
+      "path": "README.md",
+      "type": "index",
+      "txt_mirror": "README.txt",
+      "bytes": 4667
+    },
+    {
+      "path": "career-context.md",
+      "type": "career_context",
+      "txt_mirror": "career-context.txt",
+      "bytes": 8046
+    },
+    {
+      "path": "contact.md",
+      "type": "contact",
+      "txt_mirror": "contact.txt",
+      "bytes": 977
+    },
+    {
+      "path": "education-achievements.md",
+      "type": "education_and_achievements",
+      "txt_mirror": "education-achievements.txt",
+      "bytes": 2300
+    },
+    {
+      "path": "evidence-and-accuracy.md",
+      "type": "evidence_policy",
+      "txt_mirror": "evidence-and-accuracy.txt",
+      "bytes": 7316
+    },
+    {
+      "path": "experience/access-control.md",
+      "type": "experience_detail",
+      "txt_mirror": "experience/access-control.txt",
+      "bytes": 3965
+    },
+    {
+      "path": "experience/issue-tracking-and-activity.md",
+      "type": "experience_detail",
+      "txt_mirror": "experience/issue-tracking-and-activity.txt",
+      "bytes": 1553
+    },
+    {
+      "path": "experience/offline-first-mobile.md",
+      "type": "experience_detail",
+      "txt_mirror": "experience/offline-first-mobile.txt",
+      "bytes": 19938
+    },
+    {
+      "path": "experience/po-ingestion.md",
+      "type": "experience_detail",
+      "txt_mirror": "experience/po-ingestion.txt",
+      "bytes": 4185
+    },
+    {
+      "path": "experience/production-support.md",
+      "type": "experience_detail",
+      "txt_mirror": "experience/production-support.txt",
+      "bytes": 3342
+    },
+    {
+      "path": "experience/rich-text-security.md",
+      "type": "experience_detail",
+      "txt_mirror": "experience/rich-text-security.txt",
+      "bytes": 3941
+    },
+    {
+      "path": "experience/scheduled-pipelines.md",
+      "type": "experience_detail",
+      "txt_mirror": "experience/scheduled-pipelines.txt",
+      "bytes": 3549
+    },
+    {
+      "path": "experience/status-engine.md",
+      "type": "experience_detail",
+      "txt_mirror": "experience/status-engine.txt",
+      "bytes": 4950
+    },
+    {
+      "path": "experience/venwiz.md",
+      "type": "experience",
+      "txt_mirror": "experience/venwiz.txt",
+      "bytes": 3701
+    },
+    {
+      "path": "experience/workspace-insights-hawkai.md",
+      "type": "experience_detail",
+      "txt_mirror": "experience/workspace-insights-hawkai.txt",
+      "bytes": 8915
+    },
+    {
+      "path": "interview-stories.md",
+      "type": "interview_stories",
+      "txt_mirror": "interview-stories.txt",
+      "bytes": 14555
+    },
+    {
+      "path": "profile.md",
+      "type": "markdown",
+      "txt_mirror": "profile.txt",
+      "bytes": 67362
+    },
+    {
+      "path": "projects/aahaar.md",
+      "type": "project",
+      "txt_mirror": "projects/aahaar.txt",
+      "bytes": 2910
+    },
+    {
+      "path": "projects/airline-reservation-system.md",
+      "type": "project",
+      "txt_mirror": "projects/airline-reservation-system.txt",
+      "bytes": 1851
+    },
+    {
+      "path": "projects/ecommerce-platform.md",
+      "type": "project",
+      "txt_mirror": "projects/ecommerce-platform.txt",
+      "bytes": 1539
+    },
+    {
+      "path": "projects/historical-projects.md",
+      "type": "project_index",
+      "txt_mirror": "projects/historical-projects.txt",
+      "bytes": 1157
+    },
+    {
+      "path": "projects/other-repositories.md",
+      "type": "project_index",
+      "txt_mirror": "projects/other-repositories.txt",
+      "bytes": 2083
+    },
+    {
+      "path": "projects/precision-backend.md",
+      "type": "project",
+      "txt_mirror": "projects/precision-backend.txt",
+      "bytes": 7113
+    },
+    {
+      "path": "projects/precision-frontend.md",
+      "type": "project",
+      "txt_mirror": "projects/precision-frontend.txt",
+      "bytes": 1022
+    },
+    {
+      "path": "projects/quirkypost.md",
+      "type": "project",
+      "txt_mirror": "projects/quirkypost.txt",
+      "bytes": 5797
+    },
+    {
+      "path": "projects/stock-picker-agent.md",
+      "type": "project",
+      "txt_mirror": "projects/stock-picker-agent.txt",
+      "bytes": 1319
+    },
+    {
+      "path": "projects/twitter-clone.md",
+      "type": "project",
+      "txt_mirror": "projects/twitter-clone.txt",
+      "bytes": 1712
+    },
+    {
+      "path": "skills.md",
+      "type": "skills",
+      "txt_mirror": "skills.txt",
+      "bytes": 6085
+    },
+    {
+      "path": "source-register.md",
+      "type": "source_register",
+      "txt_mirror": "source-register.txt",
+      "bytes": 5943
+    }
+  ],
+  "source_files": [
+    "sources/mock-interview-transcript.txt",
+    "sources/resume-backend.txt",
+    "sources/resume-ai.txt",
+    "sources/resume-fullstack.txt",
+    "sources/linkedin-quirkypost-post.txt",
+    "sources/github-stock-picker-readme.txt"
+  ],
+  "global_accuracy_rules": [
+    "Do not invent facts, metrics, dates, features, or implementation details.",
+    "Separate production work, independent projects, learning plans, and interview coaching.",
+    "Do not claim exactly-once execution or conflict-free merging.",
+    "Keep the phone number out of public-facing files.",
+    "Treat resume metrics as self-reported unless supporting measurement data is provided.",
+    "Preserve the hackathon ranking discrepancy until owner clarification.",
+    "When repository details are incomplete, state the evidence gap rather than guessing."
+  ]
+}

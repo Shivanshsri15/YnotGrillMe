@@ -1,9 +1,15 @@
+import { join } from 'node:path';
 import { APP_DEFAULTS, GEMINI_CONFIG_DEFAULTS } from './constants.ts';
 
 export default () => ({
   nodeEnv: process.env.NODE_ENV ?? 'development',
   port: parseInt(process.env.PORT ?? String(APP_DEFAULTS.port), 10),
   corsOrigin: process.env.CORS_ORIGIN ?? APP_DEFAULTS.corsOrigin,
+  knowledge: {
+    root: process.env.KNOWLEDGE_ROOT
+      ? process.env.KNOWLEDGE_ROOT
+      : join(process.cwd(), APP_DEFAULTS.knowledgeRoot),
+  },
   gemini: {
     apiKeys: (process.env.GEMINI_API_KEYS ?? '')
       .split(',')
@@ -24,6 +30,13 @@ export default () => ({
         String(GEMINI_CONFIG_DEFAULTS.keyCooldownMs),
       10,
     ),
+    thinkingLevel:
+      process.env.GEMINI_THINKING_LEVEL ?? GEMINI_CONFIG_DEFAULTS.thinkingLevel,
+    maxOutputTokens: parseInt(
+      process.env.GEMINI_MAX_OUTPUT_TOKENS ??
+        String(GEMINI_CONFIG_DEFAULTS.maxOutputTokens),
+      10,
+    ),
   },
   throttle: {
     ttlMs: parseInt(
@@ -35,4 +48,21 @@ export default () => ({
       10,
     ),
   },
+  contact: {
+    messageDir: resolveContactMessageDir(),
+  },
+  github: {
+    webhookSecret: process.env.GITHUB_WEBHOOK_SECRET ?? '',
+    token: process.env.GITHUB_TOKEN ?? '',
+  },
 });
+
+function resolveContactMessageDir(): string {
+  if (process.env.CONTACT_MESSAGE_DIR !== undefined) {
+    return process.env.CONTACT_MESSAGE_DIR.trim();
+  }
+  if (process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'test') {
+    return '';
+  }
+  return join(process.cwd(), 'tmp/contact-messages');
+}

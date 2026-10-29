@@ -1,0 +1,16 @@
+{
+  "nodes": [
+    { "id": "api", "label": "API", "description": "NestJS HTTP API" },
+    { "id": "db", "label": "DB", "description": "Database" }
+  ],
+  "edges": [
+    { "id": "e1", "source": "api", "target": "db", "label": "reads/writes" }
+  ],
+  "flows": [
+    {
+      "id": "create",
+      "label": "Create resource",
+      "steps": ["api", "db"]
+    }
+  ]
+}

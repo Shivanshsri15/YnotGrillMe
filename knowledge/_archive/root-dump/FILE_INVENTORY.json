@@ -1,0 +1,347 @@
+[
+  {
+    "path": "KNOWLEDGE_BASE_COMPLETE.txt",
+    "bytes": 208793,
+    "sha256": "424114e58c9e753a09650e0d0d5e2e5776f8b9ae7241bce3284c4e71eb742154"
+  },
+  {
+    "path": "README.md",
+    "bytes": 4667,
+    "sha256": "163019553752b8181422971f16e317a306044aff7955f653bce09d34d57b33b6"
+  },
+  {
+    "path": "README.txt",
+    "bytes": 4667,
+    "sha256": "163019553752b8181422971f16e317a306044aff7955f653bce09d34d57b33b6"
+  },
+  {
+    "path": "VALIDATION_REPORT.txt",
+    "bytes": 846,
+    "sha256": "364aad1c46a50ef8f56f26334253ead0413ffb3f0351ac11593a3b9b2be3a973"
+  },
+  {
+    "path": "career-context.md",
+    "bytes": 8046,
+    "sha256": "c7b35378c389c3749432ac9ee7fa63402ebbcadac3eae80ccd1626e63b6d93c8"
+  },
+  {
+    "path": "career-context.txt",
+    "bytes": 8046,
+    "sha256": "c7b35378c389c3749432ac9ee7fa63402ebbcadac3eae80ccd1626e63b6d93c8"
+  },
+  {
+    "path": "contact.md",
+    "bytes": 977,
+    "sha256": "e8ce700f4d25552dd2ce02cd40e9f0f00fb0b595b30745c36d61f7e49cc51ce5"
+  },
+  {
+    "path": "contact.txt",
+    "bytes": 977,
+    "sha256": "e8ce700f4d25552dd2ce02cd40e9f0f00fb0b595b30745c36d61f7e49cc51ce5"
+  },
+  {
+    "path": "education-achievements.md",
+    "bytes": 2300,
+    "sha256": "0a0e7106448b64b4874b3e0ce0407154d98d284fba4289358adb2943f6166271"
+  },
+  {
+    "path": "education-achievements.txt",
+    "bytes": 2300,
+    "sha256": "0a0e7106448b64b4874b3e0ce0407154d98d284fba4289358adb2943f6166271"
+  },
+  {
+    "path": "evidence-and-accuracy.md",
+    "bytes": 7316,
+    "sha256": "05b1377cf1699cfbaeab264719ee286031d9599f14f0eeab2d26bf66bc974457"
+  },
+  {
+    "path": "evidence-and-accuracy.txt",
+    "bytes": 7316,
+    "sha256": "05b1377cf1699cfbaeab264719ee286031d9599f14f0eeab2d26bf66bc974457"
+  },
+  {
+    "path": "experience/access-control.md",
+    "bytes": 3965,
+    "sha256": "e656c6d76eb5759aa2eef3aaf0d5bedd065a8c7a16e165426d3610615ee95680"
+  },
+  {
+    "path": "experience/access-control.txt",
+    "bytes": 3965,
+    "sha256": "e656c6d76eb5759aa2eef3aaf0d5bedd065a8c7a16e165426d3610615ee95680"
+  },
+  {
+    "path": "experience/issue-tracking-and-activity.md",
+    "bytes": 1553,
+    "sha256": "b3722b30df0bf3911e19c69a3567d9f518cf8ad66fc2a72bc89b329cc165b63c"
+  },
+  {
+    "path": "experience/issue-tracking-and-activity.txt",
+    "bytes": 1553,
+    "sha256": "b3722b30df0bf3911e19c69a3567d9f518cf8ad66fc2a72bc89b329cc165b63c"
+  },
+  {
+    "path": "experience/offline-first-mobile.md",
+    "bytes": 19938,
+    "sha256": "880689fc8580c54df216145a33fad4d55a3abc982a6f59ba34820aad06c195d4"
+  },
+  {
+    "path": "experience/offline-first-mobile.txt",
+    "bytes": 19938,
+    "sha256": "880689fc8580c54df216145a33fad4d55a3abc982a6f59ba34820aad06c195d4"
+  },
+  {
+    "path": "experience/po-ingestion.md",
+    "bytes": 4185,
+    "sha256": "d029d76fe152bdffcd9283f294e0ee1b0d21e3d13b1f7b8aa74a6cb9bdd80868"
+  },
+  {
+    "path": "experience/po-ingestion.txt",
+    "bytes": 4185,
+    "sha256": "d029d76fe152bdffcd9283f294e0ee1b0d21e3d13b1f7b8aa74a6cb9bdd80868"
+  },
+  {
+    "path": "experience/production-support.md",
+    "bytes": 3342,
+    "sha256": "88afb46e055f88b483e3c5f8435a9680b50391c9b531414b256a64ced304f9eb"
+  },
+  {
+    "path": "experience/production-support.txt",
+    "bytes": 3342,
+    "sha256": "88afb46e055f88b483e3c5f8435a9680b50391c9b531414b256a64ced304f9eb"
+  },
+  {
+    "path": "experience/rich-text-security.md",
+    "bytes": 3941,
+    "sha256": "484e064891ec822f86f8cbf0bdfcfe62eb6d067d64923ea74defa77e88b10f7d"
+  },
+  {
+    "path": "experience/rich-text-security.txt",
+    "bytes": 3941,
+    "sha256": "484e064891ec822f86f8cbf0bdfcfe62eb6d067d64923ea74defa77e88b10f7d"
+  },
+  {
+    "path": "experience/scheduled-pipelines.md",
+    "bytes": 3549,
+    "sha256": "d7dd27dfe4cb20de55a85b6522b00f49f70b7cbc7964bf3ca81555941d6588dc"
+  },
+  {
+    "path": "experience/scheduled-pipelines.txt",
+    "bytes": 3549,
+    "sha256": "d7dd27dfe4cb20de55a85b6522b00f49f70b7cbc7964bf3ca81555941d6588dc"
+  },
+  {
+    "path": "experience/status-engine.md",
+    "bytes": 4950,
+    "sha256": "96ca361518d64630956886b6194bc0ee393b318608e0adf21873041eecabad95"
+  },
+  {
+    "path": "experience/status-engine.txt",
+    "bytes": 4950,
+    "sha256": "96ca361518d64630956886b6194bc0ee393b318608e0adf21873041eecabad95"
+  },
+  {
+    "path": "experience/venwiz.md",
+    "bytes": 3701,
+    "sha256": "977032555f9c2a229151bdfb412228ad914ddec0eef5228a17c334a43d461ea9"
+  },
+  {
+    "path": "experience/venwiz.txt",
+    "bytes": 3701,
+    "sha256": "977032555f9c2a229151bdfb412228ad914ddec0eef5228a17c334a43d461ea9"
+  },
+  {
+    "path": "experience/workspace-insights-hawkai.md",
+    "bytes": 8915,
+    "sha256": "f51db8d76256f5314919bc498f96e86e38dc7b54e80139c9cdda6aa78fa53135"
+  },
+  {
+    "path": "experience/workspace-insights-hawkai.txt",
+    "bytes": 8915,
+    "sha256": "f51db8d76256f5314919bc498f96e86e38dc7b54e80139c9cdda6aa78fa53135"
+  },
+  {
+    "path": "interview-stories.md",
+    "bytes": 14555,
+    "sha256": "267324de5cb648b919014a7f6fdf1e1199faa1ecb8b13618e14f495e23b9a135"
+  },
+  {
+    "path": "interview-stories.txt",
+    "bytes": 14555,
+    "sha256": "267324de5cb648b919014a7f6fdf1e1199faa1ecb8b13618e14f495e23b9a135"
+  },
+  {
+    "path": "knowledge-base.json",
+    "bytes": 5653,
+    "sha256": "e3f0bea42599a61c3e7bc45e8928e1afb1729e4da8c045e914b3c370385e440b"
+  },
+  {
+    "path": "knowledge-base.txt",
+    "bytes": 5653,
+    "sha256": "e3f0bea42599a61c3e7bc45e8928e1afb1729e4da8c045e914b3c370385e440b"
+  },
+  {
+    "path": "profile.md",
+    "bytes": 67362,
+    "sha256": "a12177b90d3d3f76537041f680465f58465cc2f25744f972befbe8452277c1bf"
+  },
+  {
+    "path": "profile.txt",
+    "bytes": 67362,
+    "sha256": "a12177b90d3d3f76537041f680465f58465cc2f25744f972befbe8452277c1bf"
+  },
+  {
+    "path": "projects/aahaar.md",
+    "bytes": 2910,
+    "sha256": "936124063c24f797f0fbe7a70f9a1f6d394f83c6818147c5da2e098a54c7e83a"
+  },
+  {
+    "path": "projects/aahaar.txt",
+    "bytes": 2910,
+    "sha256": "936124063c24f797f0fbe7a70f9a1f6d394f83c6818147c5da2e098a54c7e83a"
+  },
+  {
+    "path": "projects/airline-reservation-system.md",
+    "bytes": 1851,
+    "sha256": "7105ecb868851695b6c41a89e6eaed047db14bb8a4ef58c479185967e67458cc"
+  },
+  {
+    "path": "projects/airline-reservation-system.txt",
+    "bytes": 1851,
+    "sha256": "7105ecb868851695b6c41a89e6eaed047db14bb8a4ef58c479185967e67458cc"
+  },
+  {
+    "path": "projects/ecommerce-platform.md",
+    "bytes": 1539,
+    "sha256": "02cc0bda86fa05b73aeb71a438932c3f6a20b49eb7561a780973a9aa930165ff"
+  },
+  {
+    "path": "projects/ecommerce-platform.txt",
+    "bytes": 1539,
+    "sha256": "02cc0bda86fa05b73aeb71a438932c3f6a20b49eb7561a780973a9aa930165ff"
+  },
+  {
+    "path": "projects/historical-projects.md",
+    "bytes": 1157,
+    "sha256": "577073d6718785d6157c8ff95e8f782e28b2fa653b922c5063c0015b73c255a2"
+  },
+  {
+    "path": "projects/historical-projects.txt",
+    "bytes": 1157,
+    "sha256": "577073d6718785d6157c8ff95e8f782e28b2fa653b922c5063c0015b73c255a2"
+  },
+  {
+    "path": "projects/other-repositories.md",
+    "bytes": 2083,
+    "sha256": "ec786e2ff09fb49a9d4f844f82ebd8aebe4d9099bb7b230595adcb87c706b4c6"
+  },
+  {
+    "path": "projects/other-repositories.txt",
+    "bytes": 2083,
+    "sha256": "ec786e2ff09fb49a9d4f844f82ebd8aebe4d9099bb7b230595adcb87c706b4c6"
+  },
+  {
+    "path": "projects/precision-backend.md",
+    "bytes": 7113,
+    "sha256": "6095ba6187cf510377fa7e79fcc56ff000517f4da22b3e620e91bc8324aa174c"
+  },
+  {
+    "path": "projects/precision-backend.txt",
+    "bytes": 7113,
+    "sha256": "6095ba6187cf510377fa7e79fcc56ff000517f4da22b3e620e91bc8324aa174c"
+  },
+  {
+    "path": "projects/precision-frontend.md",
+    "bytes": 1022,
+    "sha256": "c15cffe06f7659bc907d45ac19b555566a37848ae21661fd1d28700d987b2d17"
+  },
+  {
+    "path": "projects/precision-frontend.txt",
+    "bytes": 1022,
+    "sha256": "c15cffe06f7659bc907d45ac19b555566a37848ae21661fd1d28700d987b2d17"
+  },
+  {
+    "path": "projects/quirkypost.md",
+    "bytes": 5797,
+    "sha256": "63a004fa26dd5f9f9d77ce97efbbc7233e0a0826511ac85b7b4c0c7b23d9d84b"
+  },
+  {
+    "path": "projects/quirkypost.txt",
+    "bytes": 5797,
+    "sha256": "63a004fa26dd5f9f9d77ce97efbbc7233e0a0826511ac85b7b4c0c7b23d9d84b"
+  },
+  {
+    "path": "projects/stock-picker-agent.md",
+    "bytes": 1319,
+    "sha256": "7b892dd937c386f9ba28e88b7923a37486cad60dd1407d26343de27d754a82b5"
+  },
+  {
+    "path": "projects/stock-picker-agent.txt",
+    "bytes": 1319,
+    "sha256": "7b892dd937c386f9ba28e88b7923a37486cad60dd1407d26343de27d754a82b5"
+  },
+  {
+    "path": "projects/twitter-clone.md",
+    "bytes": 1712,
+    "sha256": "5f3cced811d259d88a6ea251971ed562a57b2567b3cb79ecb5a6d5faadafd959"
+  },
+  {
+    "path": "projects/twitter-clone.txt",
+    "bytes": 1712,
+    "sha256": "5f3cced811d259d88a6ea251971ed562a57b2567b3cb79ecb5a6d5faadafd959"
+  },
+  {
+    "path": "scripts/validate_kb.py",
+    "bytes": 1944,
+    "sha256": "f54c1dfcf48376f4b719bf630736a2e16ea4bd86feac86e8f01c6190e5296b63"
+  },
+  {
+    "path": "skills.md",
+    "bytes": 6085,
+    "sha256": "c1a1cebd649019b88c1059c57f40739b7a67cf56a8747d378d211d155ebf7645"
+  },
+  {
+    "path": "skills.txt",
+    "bytes": 6085,
+    "sha256": "c1a1cebd649019b88c1059c57f40739b7a67cf56a8747d378d211d155ebf7645"
+  },
+  {
+    "path": "source-register.md",
+    "bytes": 5943,
+    "sha256": "e7ca4ede097b1ec7a2917d568498407ea1398f55d1ded72a5366ce66434ca79e"
+  },
+  {
+    "path": "source-register.txt",
+    "bytes": 5943,
+    "sha256": "e7ca4ede097b1ec7a2917d568498407ea1398f55d1ded72a5366ce66434ca79e"
+  },
+  {
+    "path": "sources/github-stock-picker-readme.txt",
+    "bytes": 894,
+    "sha256": "7887be675d05391c1df800400be1ec27624feec652468186a01078e8bdf2b700"
+  },
+  {
+    "path": "sources/linkedin-quirkypost-post.txt",
+    "bytes": 1173,
+    "sha256": "1359969e5d15a5c2ba005f7742badf5001dde8cc6cc6d38ae15b23ea234c286c"
+  },
+  {
+    "path": "sources/mock-interview-transcript.txt",
+    "bytes": 65853,
+    "sha256": "bf0dfba73f5164c793ef6485db54a9841bc5f58dcddcca8e04f95c9b25b2f0cf"
+  },
+  {
+    "path": "sources/resume-ai.txt",
+    "bytes": 6034,
+    "sha256": "56166ddf097d3f5d0a279c81a6099888e231df77198f706134c5c305228139e6"
+  },
+  {
+    "path": "sources/resume-backend.txt",
+    "bytes": 5770,
+    "sha256": "ca9a6b02429b1cc0cb049f91b53fc63e8b267fba6ae7901cea82d4134c35d0b2"
+  },
+  {
+    "path": "sources/resume-fullstack.txt",
+    "bytes": 6030,
+    "sha256": "eb1538eee940e51a1d6a6d245399e50fae90effd060d7b78d2ecd5e7f559ac01"
+  }
+]

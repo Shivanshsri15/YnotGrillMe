@@ -1,0 +1,22 @@
+Validation report
+=================
+
+Indexed Markdown: 29
+Markdown files: 29
+Text mirrors: 37
+Errors: 0
+Warnings: 0
+
+
+Manual checks
+-------------
+- Phone number is not present in public-facing Markdown.
+- All eight supplied repository URLs are present.
+- All Markdown files have exact same-content .txt mirrors.
+- Resume source extracts redact the phone number.
+- Original mock-interview transcript is included as a separate source file.
+- Public LinkedIn profile fetch was not treated as verified; similar-name profiles were excluded.
+- QuirkyPost feature details cite the owner's public LinkedIn post.
+- Stock Picker Agent memory status distinguishes active SQLite memory from commented RAG memory.
+
+Validation passed. Structural validation cannot independently prove the truth of biographical/project claims or that external demos are online.

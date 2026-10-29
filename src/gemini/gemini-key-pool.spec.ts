@@ -14,13 +14,22 @@ describe('GeminiKeyPool', () => {
     vi.useRealTimers();
   });
 
-  it('round-robins across available keys', () => {
+  it('round-robins across available keys until one succeeds', () => {
     const pool = createPool(['key-a', 'key-b', 'key-c']);
 
     expect(pool.acquire()).toEqual({ key: 'key-a', index: 0 });
     expect(pool.acquire()).toEqual({ key: 'key-b', index: 1 });
-    expect(pool.acquire()).toEqual({ key: 'key-c', index: 2 });
-    expect(pool.acquire()).toEqual({ key: 'key-a', index: 0 });
+    pool.markSuccess(1);
+    // Sticky healthy key is reused instead of continuing blind round-robin.
+    expect(pool.acquire()).toEqual({ key: 'key-b', index: 1 });
+    expect(pool.acquire()).toEqual({ key: 'key-b', index: 1 });
+  });
+
+  it('clears sticky key when it is cooled down', () => {
+    const pool = createPool(['key-a', 'key-b']);
+    pool.markSuccess(0);
+    pool.markCooldown(0);
+    expect(pool.acquire()).toEqual({ key: 'key-b', index: 1 });
   });
 
   it('skips keys that are cooling down and fails over', () => {

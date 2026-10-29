@@ -1,0 +1,16 @@
+Source type: Public LinkedIn post by the owner
+URL: https://www.linkedin.com/posts/shivanshsri15_mernstack-quirkypost-bloggingplatform-activity-7283915866037968897-0VRd
+Retrieved/reviewed: 2026-10-29
+
+The post describes QuirkyPost as a completed MERN-stack blogging platform and lists:
+- JWT-based login and registration, with middleware protecting authenticated pages.
+- Homepage using React Bootstrap; trending posts and a load-more option.
+- Blog drafts stored in Redux state so users can continue drafting; published blogs persisted in MongoDB.
+- Gemini AI assistance for improving blog writing.
+- Blog detail pages with likes, comments, and saved posts.
+- Saved posts shown on the user's profile; interactions stored in blog/user data.
+- Editable profile data and profile-picture upload using Multer.
+- Monthly activity progress bars for likes, comments, and posts.
+- User search, follow/unfollow, and viewing user profiles/activity.
+
+This is a first-party social post, not a code audit or current uptime check. Features are documented as described in the post; their current status should be verified against repository code before presenting them as currently live.

@@ -22,6 +22,14 @@ export const envValidationSchema = Joi.object({
     .integer()
     .min(1000)
     .default(GEMINI_CONFIG_DEFAULTS.keyCooldownMs),
+  GEMINI_THINKING_LEVEL: Joi.string()
+    .valid('minimal', 'low', 'medium', 'high')
+    .default(GEMINI_CONFIG_DEFAULTS.thinkingLevel),
+  GEMINI_MAX_OUTPUT_TOKENS: Joi.number()
+    .integer()
+    .min(256)
+    .max(8192)
+    .default(GEMINI_CONFIG_DEFAULTS.maxOutputTokens),
   THROTTLE_TTL_MS: Joi.number()
     .integer()
     .min(1000)
@@ -30,4 +38,8 @@ export const envValidationSchema = Joi.object({
     .integer()
     .min(1)
     .default(APP_DEFAULTS.throttleLimit),
+  KNOWLEDGE_ROOT: Joi.string().optional(),
+  CONTACT_MESSAGE_DIR: Joi.string().allow('').optional(),
+  GITHUB_WEBHOOK_SECRET: Joi.string().allow('').default(''),
+  GITHUB_TOKEN: Joi.string().allow('').default(''),
 });

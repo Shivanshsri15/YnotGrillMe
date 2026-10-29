@@ -3,6 +3,8 @@ export {
   GrillAction,
   GrillMode,
   ResumeVariant,
+  SkillLevel,
+  Visibility,
   VisitorRole,
 } from './enums.ts';
 export { ENTRY_PRESETS } from './constants/index.ts';

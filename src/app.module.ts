@@ -4,8 +4,13 @@ import { APP_GUARD } from '@nestjs/core';
 import { ThrottlerGuard, ThrottlerModule } from '@nestjs/throttler';
 import configuration from './config/configuration.ts';
 import { envValidationSchema } from './config/env.validation.ts';
+import { AgentModule } from './agent/agent.module.ts';
+import { ContactModule } from './contact/contact.module.ts';
 import { GeminiModule } from './gemini/gemini.module.ts';
+import { GithubModule } from './github/github.module.ts';
 import { HealthModule } from './health/health.module.ts';
+import { KnowledgeModule } from './knowledge/knowledge.module.ts';
+import { ResumeModule } from './resume/resume.module.ts';
 
 @Module({
   imports: [
@@ -25,6 +30,11 @@ import { HealthModule } from './health/health.module.ts';
     }),
     HealthModule,
     GeminiModule,
+    KnowledgeModule,
+    AgentModule,
+    ContactModule,
+    ResumeModule,
+    GithubModule,
   ],
   providers: [
     {

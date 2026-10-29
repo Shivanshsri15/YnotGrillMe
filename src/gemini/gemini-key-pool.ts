@@ -20,6 +20,8 @@ export class GeminiKeyPool {
   private readonly keys: KeyState[];
   private readonly cooldownMs: number;
   private cursor = 0;
+  /** Prefer the last key that completed successfully (skip flaky round-robin peers). */
+  private stickyIndex: number | null = null;
 
   constructor(
     @Inject(GEMINI_KEY_POOL_OPTIONS)
@@ -43,13 +45,24 @@ export class GeminiKeyPool {
     return this.keys.length;
   }
 
-  /** Round-robin among keys that are not cooling down. */
+  /**
+   * Prefer the sticky healthy key when available; otherwise round-robin among
+   * keys that are not cooling down.
+   */
   acquire(): AcquiredKey {
     if (this.keys.length === 0) {
       throw new ServiceUnavailableException(GEMINI_MESSAGES.notConfigured);
     }
 
     const now = Date.now();
+
+    if (this.stickyIndex !== null) {
+      const sticky = this.keys[this.stickyIndex];
+      if (sticky && sticky.cooldownUntil <= now) {
+        return { key: sticky.key, index: this.stickyIndex };
+      }
+    }
+
     for (let attempt = 0; attempt < this.keys.length; attempt++) {
       const index = this.cursor % this.keys.length;
       this.cursor = (this.cursor + 1) % this.keys.length;
@@ -62,12 +75,22 @@ export class GeminiKeyPool {
     throw new ServiceUnavailableException(GEMINI_MESSAGES.allKeysRateLimited);
   }
 
+  markSuccess(index: number): void {
+    if (index < 0 || index >= this.keys.length) {
+      return;
+    }
+    this.stickyIndex = index;
+  }
+
   markCooldown(index: number, cooldownMs = this.cooldownMs): void {
     const state = this.keys[index];
     if (!state) {
       return;
     }
     state.cooldownUntil = Date.now() + cooldownMs;
+    if (this.stickyIndex === index) {
+      this.stickyIndex = null;
+    }
     this.logger.warn(
       `Gemini key #${index} cooling down for ${cooldownMs}ms after failure`,
     );
@@ -77,5 +100,6 @@ export class GeminiKeyPool {
     for (const state of this.keys) {
       state.cooldownUntil = 0;
     }
+    this.stickyIndex = null;
   }
 }
