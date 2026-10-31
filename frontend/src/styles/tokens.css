@@ -1,0 +1,21 @@
+:root {
+  --coal-950: #090807;
+  --coal-900: #100e0c;
+  --coal-800: #1a1613;
+  --coal-700: #2b241f;
+  --ash-400: #9b948a;
+  --ash-200: #d4cdc3;
+  --cream: #f4eee6;
+  --ember-400: #ff6a2b;
+  --ember-500: #f04818;
+  --ember-300: #ffb067;
+  --ember-glow: color-mix(in srgb, var(--ember-400) 28%, transparent);
+  --receipt: #e2b56c;
+
+  --font-display: 'Unbounded', system-ui, sans-serif;
+  --font-body: 'Outfit', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --space-page: clamp(1.25rem, 4vw, 3.5rem);
+}

@@ -1,7 +1,7 @@
 {
-  "name": "ynot-grill-me",
+  "name": "ynot-grill-me-backend",
   "version": "0.0.1",
-  "description": "Why Not Grill Me? - interactive AI engineering portfolio API",
+  "description": "Why Not Grill Me? — NestJS API (knowledge, grill chat, JD, GitHub sync)",
   "author": "",
   "private": true,
   "license": "UNLICENSED",

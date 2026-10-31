@@ -1,0 +1,42 @@
+@import './styles/tokens.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  color: var(--cream);
+  background: var(--coal-950);
+  font-family: var(--font-body);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+a {
+  font: inherit;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--ember-400) 40%, transparent);
+  color: var(--cream);
+}
+
+:focus-visible {
+  outline: 2px solid var(--ember-400);
+  outline-offset: 3px;
+}
