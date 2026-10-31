@@ -8,13 +8,14 @@ YnotGrillMe/
   frontend/   Vite + React (butcher-paper × data-structures UI)
 ```
 
-## Theme (frontend)
+## Frontend
 
-**Premium charcoal grill (product UI)**
+**Agentic grill chat** (Vite + React) — not a marketing portfolio site.
 
-- Full-bleed coal stage + perspective grate + restrained ember heat  
-- Brand-first hero → interactive doneness → session preview → projects → leave-with  
-- Display: Unbounded · Body: Outfit · Mono: IBM Plex Mono  
+- Full-app chat shell with SSE to `POST /agent/chat`  
+- Heat controls (warm-up / medium rare / well done) + audience  
+- Streaming tokens, highlight chips, rabbit-hole suggestions, receipts  
+- Charcoal / ember chrome · Unbounded + Outfit + IBM Plex Mono  
 
 
 ## Quick start

@@ -267,7 +267,11 @@ export class ChatService {
         system: prompt.system,
         history: prompt.history,
         userMessage: prompt.userMessage,
-        maxOutputTokens: this.prompts.maxOutputTokensFor(depth),
+        maxOutputTokens: this.prompts.maxOutputTokensFor(
+          depth,
+          input.message,
+          grillMode,
+        ),
       })) {
         assistantText += delta;
         yield { event: 'token', data: { text: delta } };

@@ -28,6 +28,10 @@ export class RetrievalService {
   constructor(private readonly knowledge: KnowledgeService) {}
 
   retrieve(options: RetrievalOptions): RetrievalResult {
+    if (this.isCasualQuery(options.query) && !options.projectId) {
+      return this.casualRetrieval();
+    }
+
     const tokens = this.tokenize(options.query);
     const scored: RetrievalChunk[] = [];
     const pinnedProject = options.projectId
@@ -413,6 +417,56 @@ export class RetrievalService {
     if (project.pillar === ExperiencePillar.Backend) return 9;
     if (project.pillar === ExperiencePillar.Platform) return 6;
     return Math.max(0, 8 - Math.floor(project.narrativeOrder / 5));
+  }
+
+  private isCasualQuery(query: string): boolean {
+    const text = query.trim();
+    if (!text || text.length > 80) return false;
+    const lower = text.toLowerCase();
+    if (
+      /^(hi|hii+|hello|hey|yo|sup|hiya|howdy|gm|good\s*(morning|afternoon|evening|night)|thanks|thank\s*you|ty|ok|okay|cool|nice|great|lol|haha)[\s!.?]*$/i.test(
+        lower,
+      )
+    ) {
+      return true;
+    }
+    return (
+      /^(hi|hello|hey)\b.{0,40}$/i.test(lower) &&
+      !/\b(venwiz|hawk|project|built|build|experience|backend|api|stack|resume|work)\b/i.test(
+        lower,
+      )
+    );
+  }
+
+  private casualRetrieval(): RetrievalResult {
+    const profile = this.knowledge.getProfile();
+    if (!profile) {
+      return {
+        chunks: [],
+        projectIds: [],
+        skillIds: [],
+        storyIds: [],
+        evidenceIds: [],
+      };
+    }
+    return {
+      chunks: [
+        {
+          id: 'profile',
+          sourceType: 'profile',
+          title: profile.name,
+          text: this.truncate(
+            `${profile.headline}\n${profile.summary}`,
+            400,
+          ),
+          score: 1,
+        },
+      ],
+      projectIds: [],
+      skillIds: [],
+      storyIds: [],
+      evidenceIds: [],
+    };
   }
 
   private isBroadExperienceQuery(query: string, tokens: string[]): boolean {
